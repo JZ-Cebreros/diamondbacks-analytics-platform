@@ -10,4 +10,9 @@ public class HomeController {
     public String home() {
         return "Diamondbacks Analytics Platform is running!";
     }
+
+    @GetMapping("/diamondbacks")
+    public Team diamondbacks() {
+        return new Team(109, "Arizona Diamondbacks");
+    }
 }
