@@ -1,4 +1,3 @@
-# diamondbacks-analytics-platform
 # Diamondbacks Analytics Platform
 
 A Spring Boot application that collects and analyzes Arizona Diamondbacks baseball data using the MLB Stats API.
