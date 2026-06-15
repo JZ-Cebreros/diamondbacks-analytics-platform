@@ -1,6 +1,7 @@
 package com.jzcebreros.diamondbacks_analytics;
 
 import java.util.List;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -50,5 +51,15 @@ public class HomeController {
     @GetMapping("/diamondbacks/schedule/raw")
     public String getRawDiamondbacksSchedule() {
     return mlbApiService.getRawDiamondbacksSchedule();
+    }
+
+   @GetMapping("/diamondbacks/stats")
+    public TeamStats getDiamondbacksStats() {
+    return mlbApiService.getDiamondbacksTeamStats();
+    }
+
+    @GetMapping("/diamondbacks/players/batting")
+    public List<PlayerBattingStats> getDiamondbacksPlayerBattingStats() {
+    return mlbApiService.getDiamondbacksPlayerBattingStats();
     }
 }
